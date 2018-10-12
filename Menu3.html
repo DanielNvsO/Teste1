@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+        ul li {
+            background-color: black;
+            color:white;
+            width: 100px;
+            padding: 10px;
+            
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            
+        }
+
+        ul li ul{
+            position: relative;
+            display: none;
+            margin-left: -10px;
+            margin-top: 15px;
+            padding: 0;
+            height: 60px;
+        }
+        ul li ul li{
+            padding: 10px;
+        }
+
+        ul li:hover{
+              background-color: grey;  
+        }
+        .Exemplo3:hover ul{
+            display: block;
+
+        }
+        
+        @media screen and (max-width:900px){
+            ul li{
+                float: left;
+            }
+
+        }
+
+
+    </style> 
+</head>
+<body>
+    
+    <ul>
+        <li style="cursor: pointer;">Exemplo1</li>
+        <li style="cursor: pointer;">Exemplo2</li>
+        <li class = "Exemplo3" style="cursor: pointer;">Exemplo3
+            <ul>
+                <li style="cursor: pointer;">Sub1</li>
+                <li style="cursor: pointer;">Sub2</li>    
+            </ul>
+        </li>
+        <li style="cursor: pointer;">Exemplo4</li>
+
+    </ul>
+    
+
+</body>
+</html>

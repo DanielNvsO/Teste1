@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+     body{
+         margin: 0;
+     }   
+
+    ul{
+        margin: 0;
+        padding: 0;  
+        background-color: grey;
+        overflow: auto;
+        list-style-type: none;
+        width: 25%;
+        height: 100%;
+        top:0;
+        position: fixed;
+      
+    }
+    ul li a{
+        display: block;
+        text-decoration: none;
+        color:white;
+        background-color:  grey;
+        padding: 8px 16px;
+        
+        
+    }
+
+    li{
+      
+        border-right:1px solid #bbb;
+    }
+
+    div {
+        margin-left: 25%;
+    }
+
+    ul li a:hover{
+        background-color: black;
+    } 
+   @media screen and (max-width: 400px){
+   
+       ul li {float: none;}
+       ul li a{
+        text-align: center;
+       }
+   }
+
+    @media screen and (max-width: 900px) {
+        ul{
+        margin: 0;
+        padding: 0;  
+        background-color: grey;
+        overflow: hidden;
+        list-style-type: none;
+        position: relative;
+        width: 100%;
+        top:0; }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color:white;
+            background-color:  grey;
+            padding: 8px 16px; }
+
+        li{
+            float: left;
+            border-right:1px solid #bbb;
+        }
+
+        div{
+            margin-left: 0;
+        }
+
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a> </li>
+        <li><a href="#">News</a> </li>
+        <li><a href="#">Contact</a> </li>
+        <li><a href="#">About</a> </li>
+    </ul>
+
+    <div style="padding:20px;margin-top:10px;background-color:#1abc9c;height:1500px;">
+            <h1>Fixed Top Navigation Bar</h1>
+            <h2>Scroll this page to see the effect</h2>
+            <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+</body>
+</html>
